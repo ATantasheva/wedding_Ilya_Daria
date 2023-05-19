@@ -1,0 +1,332 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant&display=swap&subset=cyrillic-ext");
+@font-face {
+  font-family: "Ekaterina Velikaya Two";
+  src: url("../ekaterinavelikayatwo.ttf");
+  src: local("☺"), url("../fonts/ekaterinavelikayatwo.woff") format("woff"), url("../fonts/ekaterinavelikayatwo.ttf") format("truetype"), url("../fonts/ekaterinavelikayatwo.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nicolettascript;
+  src: url("../Nicoletta-script.ttf");
+  src: local("☺"), url("../fonts/Nicoletta-script.woff") format("woff"), url("../fonts/Nicoletta-script.ttf") format("truetype"), url("../fonts/Nicoletta-script.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 280px;
+  position: relative;
+  width: 100%;
+  color: #424745;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1;
+  font-size: 37px;
+  font-family: "Cormorant";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body.lock {
+  overflow: hidden;
+}
+@media (max-width: 767.98px) {
+  body.lock {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+  }
+}
+
+input,
+button,
+textarea {
+  font-family: "Cormorant";
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 1182px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992.98px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+main {
+  margin: 0 auto;
+  text-align: center;
+  padding: 150px 0px 0px 0px;
+}
+
+.opacity {
+  /* background-image: url('/wedding/img/fon-dekstop1.jpeg');
+  background-size: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.35;*/
+}
+
+.fon__scroll {
+  background-image: url("/wedding/img/fon_main.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right 50%;
+  background-size: 100%;
+}
+@media (max-width: 767.98px) {
+  .fon__scroll {
+    background-image: url("/wedding/img/fon_main.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right 70%;
+    background-size: 100%;
+  }
+}
+
+.main-title {
+  padding: 350px 30px 0px 30px;
+  position: relative;
+  max-width: 685px;
+  height: 100%;
+  border: 3px solid red;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.h1 {
+  opacity: 0.9;
+  font-family: "Ekaterina Velikaya Two";
+  font-size: 160px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #505653;
+}
+
+.h1.and {
+  font-family: Nicolettascript;
+  opacity: 0.38;
+  font-size: 320px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #8f8f8f;
+  position: absolute;
+  top: 20%;
+  left: 45%;
+}
+
+.ilya {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  top: 20%;
+}
+
+.daria {
+  position: absolute;
+  left: 0;
+  top: 65%;
+  z-index: 2;
+}
+
+.main-text {
+  font-family: Cormorant;
+  font-size: 28.8px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #4d3e2a;
+}
+
+.t1 {
+  margin: 170px 0px 58px 0px;
+}
+
+.arrow {
+  width: 52px;
+  height: 45px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Ekaterina Velikaya Two";
+  line-height: 1.2;
+  font-weight: 700;
+  color: #4d3e2a;
+  font-size: 64px;
+  margin: 50px 0px 50px 0px;
+}
+
+h2 span {
+  font-size: 53.4px;
+}
+
+.weekday {
+  padding: 20px 0px 20px 0px;
+}
+
+.weekday__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.weekday__day {
+  text-transform: uppercase;
+  font-size: 21.4px;
+  color: #424745;
+}
+
+.weekday__day:not(:last-child) {
+  margin: 0px 10px 0px 0px;
+}
+
+.round {
+  border: 3px solid #c6c1a8;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.form {
+  padding: 50px 0px 50px 0px;
+}
+
+h3 {
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: rgb(1, 95, 95);
+  margin: 10px 0px 20px 0px;
+}
+
+h4 {
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: rgb(1, 95, 95);
+  margin: 10px 0px 10px 0px;
+}
+
+.form__input {
+  margin: 0px 0px 10px 0px;
+}
+
+.g-form__input_name {
+  border: 1px solid gray;
+}
+.g-form__button {
+  padding: 20px;
+  background: rgb(23, 179, 179);
+  color: #000;
+  -webkit-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.g-form__button:hover {
+  background: rgb(1, 95, 95);
+  color: #ffffff;
+}
