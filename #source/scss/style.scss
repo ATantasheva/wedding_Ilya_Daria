@@ -174,9 +174,10 @@ $md4: 479.98; //мал смартфон
 main {
    margin: 0 auto;
    text-align: center;
-padding: 150px 0px 0px 0px;
-  
+   padding: 150px 0px 0px 0px;
+
 }
+
 .opacity {
    /* background-image: url('/wedding/img/fon-dekstop1.jpeg');
    background-size: 100%;
@@ -184,29 +185,42 @@ padding: 150px 0px 0px 0px;
    background-repeat: no-repeat;
    background-attachment: fixed;
    opacity: 0.35;*/
-  
+
 }
+
+.fon-top {
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+
+.fon-top img {
+   max-width: 100%;
+}
+
 .fon__scroll {
-   background-image: url('/wedding/img/fon_main.png');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: right 50%;
-      background-size: 100%;
+   background-image: url('/img/fon_main.png');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: right 50%;
+   background-size: 100%;
+
    @media (max-width:$md3+px) {
-      background-image: url('/wedding/img/fon_main.png');
+      background-image: url('/img/fon_main.png');
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: right 70%;
       background-size: 100%;
    }
-   
+
 }
+
 .main-title {
-padding: 350px 30px 0px 30px;
+   padding: 350px 30px 0px 30px;
    position: relative;
    max-width: 685px;
- height: 100%;
-   border: 3px solid red;
+   height: 100%;
+  
    margin: 0 auto;
    text-align: center;
 }
@@ -246,21 +260,24 @@ padding: 350px 30px 0px 30px;
    top: 65%;
    z-index: 2;
 }
+
 //======================================
 .main-text {
    font-family: Cormorant;
-font-size: 28.8px;
-line-height: 1.2;
-font-weight: 700;
-color: #4d3e2a;
+   font-size: 28.8px;
+   line-height: 1.2;
+   font-weight: 700;
+   color: #4d3e2a;
 }
+
 .t1 {
    margin: 170px 0px 58px 0px;
 }
+
 .arrow {
    width: 52px;
-height: 45px;
-margin: 0 auto;
+   height: 45px;
+   margin: 0 auto;
 }
 
 h2 {
@@ -271,59 +288,151 @@ h2 {
    font-size: 64px;
    margin: 50px 0px 50px 0px;
 }
+
 h2 span {
    font-size: 53.4px;
 }
+
 .weekday {
    padding: 20px 0px 20px 0px;
 }
+
 .weekday__list {
    display: flex;
    align-items: center;
    justify-content: center;
 }
+
 .weekday__day {
-   text-transform:  uppercase;
+   text-transform: uppercase;
    font-size: 21.4px;
-color: #424745;
+   color: #424745;
 }
+
 .weekday__day:not(:last-child) {
    margin: 0px 10px 0px 0px;
 }
+
 .round {
    border: 3px solid #c6c1a8;
    border-radius: 50%;
    padding: 5px;
 }
+a {
+   cursor: pointer;
+   display: block;
+   transition: all 0.5s ease 0s;
+   color: #424745;
+   font-size: 30px;
+   &:hover {
+      background-color: #c6c1a8;
+   }
+}
 .text {
+   display: block;
+   font-size: 37px;
+   font-family: $fontfamily;
 
+}
+.location {
+   cursor: pointer;
+   display: inline-block;
+   box-shadow: 0px 8px 18px 0px rgba(0,0,0,0.33);
+  padding: 12px 30px 12px 30px;
+   border: 4px solid #c6c1a8;
+   border-radius: 30px;
+   transition: all 0.5s ease 0s;
+   margin: 40px 0px 40px 0px;
+         //background-color: #c6c1a8;
+         &:hover {
+            background-color: #c6c1a8;
+         }
+}
+h3 {
+   font-size: 32px;
+color: #424745;
+text-transform: uppercase;
+}
+//==========================================================
+//отступы
+.wedding__counter, .wishes-block {
+   margin: 0px 0px 50px 0px;
+}
+//==========================================================
+//тайминг
+.time-block {
+   position: relative;
+   margin: 0px 0px 50px 0px;
+}
+.time-block::before {
+   content: '';
+   background: url('/img/sloy_15_167.png') no-repeat ;
+   width: 100%;
+   height: 100%;
+
+   position: absolute;
+   left: 0;
+   top: 0;
+
+}
+.time-list {
+   text-align: left;
+   padding: 0px 0px 0px 50px;
+}
+.time {
+   font-family: 'Ekaterina Velikaya Two';
+   font-size: 42.7px;
+font-style: italic;
+color: #beb9a5;
+}
+.time-title:not(:last-child) {
+   margin: 0px 0px 40px 0px;
+}
+.text-margin {
+   margin: 0px 0px 40px 0px;
+}
+
+.organizer {
+   margin: 0 auto;
+   max-width: 540px;
+   border: 5px solid #cbc5af;
+border-radius: 50px;
+padding: 40px 20px;
+}
+.organizator {
+   display: inline-block;
+   background-color: #cbc5af;
+   padding: 20px 40px;
+   border-radius: 30px;
+   border: 2.5px solid #cbc5af;
+   transition: 0.5s ease 0s;
+   &:hover {
+      background-color: transparent;
+   }
+}
+.day {
+   font-family: 'Ekaterina Velikaya Two';
+   font-weight: 900;
+   font-size: 40px;
+
+}
+.text-day {
+   margin: 30px 0px 50px 0px;
 }
 //==========================================================
 //отправка формы
 .form {
-   padding: 50px 0px 50px 0px;
+  
 }
-
-
-
-h3 {
-   letter-spacing: 2px;
-   font-size: 20px;
-   color: rgb(1, 95, 95);
-   margin: 10px 0px 20px 0px;
+.text-margin {
+   margin: 0px 0px 15px 0px;
 }
-
-h4 {
-   letter-spacing: 2px;
-   font-size: 20px;
-   color: rgb(1, 95, 95);
-   margin: 10px 0px 10px 0px;
-}
-
 .form__input {
    margin: 0px 0px 10px 0px;
 }
-
+.hidden {
+   margin: 0px 0px 0px 0px;
+}
 .form {}
 
 .g-form {
@@ -340,37 +449,43 @@ h4 {
    &__inputs {}
 
    &__input-wrapper {
+      text-align: left;
+      margin: 0px 0px 30px 0px;
 
       &_hidden {}
    }
 
    &__input {
-
+      margin: 0px 20px 0px 0px;
       &_name {
-         border: 1px solid gray;
+         background-color: transparent;
+         border-bottom: 1px solid #cbc5af;
+         width: 100%;
       }
    }
 
-   &__alko {}
+   &__alko {
+      margin: 0px 20px 0px 0px;
+   }
 
    &__button-wrapper {}
 
    &__button {
-      padding: 20px;
-      background: rgb(23, 179, 179);
+      font-family: $fontfamily;
+      padding: 10px 30px;
+      background: #cbc5af;
       color: #000;
       transition: all 0.7s ease 0s;
       border-radius: 30px;
       text-transform: uppercase;
-      letter-spacing: 2px;
-
-      &:hover {
-         background: rgb(1, 95, 95);
-         color: #ffffff;
-      }
+      font-size: 30px;
+margin: 0px 0px 100px 0px;
+     
    }
 }
-
+.quote {
+   padding: 0px 0px 50px 0px;
+}
 //===================================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================

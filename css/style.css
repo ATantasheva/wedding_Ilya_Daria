@@ -165,8 +165,18 @@ main {
   opacity: 0.35;*/
 }
 
+.fon-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.fon-top img {
+  max-width: 100%;
+}
+
 .fon__scroll {
-  background-image: url("/wedding/img/fon_main.png");
+  background-image: url("/img/fon_main.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right 50%;
@@ -174,7 +184,7 @@ main {
 }
 @media (max-width: 767.98px) {
   .fon__scroll {
-    background-image: url("/wedding/img/fon_main.png");
+    background-image: url("/img/fon_main.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right 70%;
@@ -187,7 +197,6 @@ main {
   position: relative;
   max-width: 685px;
   height: 100%;
-  border: 3px solid red;
   margin: 0 auto;
   text-align: center;
 }
@@ -290,43 +299,160 @@ h2 span {
   padding: 5px;
 }
 
-.form {
-  padding: 50px 0px 50px 0px;
+a {
+  cursor: pointer;
+  display: block;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  color: #424745;
+  font-size: 30px;
+}
+a:hover {
+  background-color: #c6c1a8;
+}
+
+.text {
+  display: block;
+  font-size: 37px;
+  font-family: "Cormorant";
+}
+
+.location {
+  cursor: pointer;
+  display: inline-block;
+  -webkit-box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.33);
+          box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.33);
+  padding: 12px 30px 12px 30px;
+  border: 4px solid #c6c1a8;
+  border-radius: 30px;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  margin: 40px 0px 40px 0px;
+}
+.location:hover {
+  background-color: #c6c1a8;
 }
 
 h3 {
-  letter-spacing: 2px;
-  font-size: 20px;
-  color: rgb(1, 95, 95);
-  margin: 10px 0px 20px 0px;
+  font-size: 32px;
+  color: #424745;
+  text-transform: uppercase;
 }
 
-h4 {
-  letter-spacing: 2px;
-  font-size: 20px;
-  color: rgb(1, 95, 95);
-  margin: 10px 0px 10px 0px;
+.wedding__counter, .wishes-block {
+  margin: 0px 0px 50px 0px;
+}
+
+.time-block {
+  position: relative;
+  margin: 0px 0px 50px 0px;
+}
+
+.time-block::before {
+  content: "";
+  background: url("/img/sloy_15_167.png") no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.time-list {
+  text-align: left;
+  padding: 0px 0px 0px 50px;
+}
+
+.time {
+  font-family: "Ekaterina Velikaya Two";
+  font-size: 42.7px;
+  font-style: italic;
+  color: #beb9a5;
+}
+
+.time-title:not(:last-child) {
+  margin: 0px 0px 40px 0px;
+}
+
+.text-margin {
+  margin: 0px 0px 40px 0px;
+}
+
+.organizer {
+  margin: 0 auto;
+  max-width: 540px;
+  border: 5px solid #cbc5af;
+  border-radius: 50px;
+  padding: 40px 20px;
+}
+
+.organizator {
+  display: inline-block;
+  background-color: #cbc5af;
+  padding: 20px 40px;
+  border-radius: 30px;
+  border: 2.5px solid #cbc5af;
+  -webkit-transition: 0.5s ease 0s;
+  -o-transition: 0.5s ease 0s;
+  transition: 0.5s ease 0s;
+}
+.organizator:hover {
+  background-color: transparent;
+}
+
+.day {
+  font-family: "Ekaterina Velikaya Two";
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.text-day {
+  margin: 30px 0px 50px 0px;
+}
+
+.text-margin {
+  margin: 0px 0px 15px 0px;
 }
 
 .form__input {
   margin: 0px 0px 10px 0px;
 }
 
+.hidden {
+  margin: 0px 0px 0px 0px;
+}
+
+.g-form__input-wrapper {
+  text-align: left;
+  margin: 0px 0px 30px 0px;
+}
+.g-form__input {
+  margin: 0px 20px 0px 0px;
+}
 .g-form__input_name {
-  border: 1px solid gray;
+  background-color: transparent;
+  border-bottom: 1px solid #cbc5af;
+  width: 100%;
+}
+.g-form__alko {
+  margin: 0px 20px 0px 0px;
 }
 .g-form__button {
-  padding: 20px;
-  background: rgb(23, 179, 179);
+  font-family: "Cormorant";
+  padding: 10px 30px;
+  background: #cbc5af;
   color: #000;
   -webkit-transition: all 0.7s ease 0s;
   -o-transition: all 0.7s ease 0s;
   transition: all 0.7s ease 0s;
   border-radius: 30px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  font-size: 30px;
+  margin: 0px 0px 100px 0px;
 }
-.g-form__button:hover {
-  background: rgb(1, 95, 95);
-  color: #ffffff;
+
+.quote {
+  padding: 0px 0px 50px 0px;
 }
