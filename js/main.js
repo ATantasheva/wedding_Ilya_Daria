@@ -3,6 +3,10 @@
 //ссылка для доступа к табл
 //https://docs.google.com/spreadsheets/d/1rvJvg_y2z0Va_an_JR5gwVbLJLSI5REeXdxcBM53WNc/edit?usp=sharing
 
+let formRespond = document.querySelector('.g-form__title_respond');
+console.log(formRespond);
+formRespond.classList.add('hidden');
+
 $(function () {
    $(".g-form").submit(function (event) {
       event.preventDefault();
@@ -21,7 +25,8 @@ $(function () {
 
       // h2 с ответом формы
       let formRespond = $(this).find('.g-form__title_respond');
-      formRespond.className.add('hidden');
+      console.log(formRespond);
+      formRespond.classList.add('hidden');
       //Выбор алкоголя
       let formAlko = $(this).find('.g-form__title_main');
       // h2 с заголовком формы

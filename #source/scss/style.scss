@@ -184,15 +184,7 @@ main {
 
 }
 
-.opacity {
-   /* background-image: url('/wedding/img/fon-dekstop1.jpeg');
-   background-size: 100%;
-   height: 100%;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   opacity: 0.35;*/
 
-}
 
 .fon-top {
    position: absolute;
@@ -213,6 +205,7 @@ main {
 
 }
 
+/*
 body:before {
    content: '';
    background: url('../img/fon_main.png');
@@ -222,8 +215,8 @@ body:before {
    background-position: right 50%;
    z-index: 3;
 }
+*/
 
-/*
 .fon__scroll {
    -webkit-background-image: url('../img/fon_main.png');
    -webkit-background-repeat: no-repeat;
@@ -250,7 +243,7 @@ body:before {
    }
 
 }
-*/
+
 .main-title {
    padding: 350px 30px 0px 30px;
    position: relative;
@@ -258,8 +251,6 @@ body:before {
    height: 100%;
    margin: 0 auto;
    text-align: center;
-
-   @media (max-width:$md3+px) {}
 }
 
 .h1 {
@@ -346,7 +337,7 @@ body:before {
 
 //======================================
 .main-text {
-   font-family: Cormorant;
+   font-family: $fontfamily;
    font-size: 28.8px;
    line-height: 1.2;
    font-weight: 700;
@@ -356,6 +347,7 @@ body:before {
 .t1 {
    margin: 270px 0px 58px 0px;
    text-transform: uppercase;
+   font-family: $fontfamily;
 
    @media (max-width:$md3+px) {
       margin: 170px 0px 38px 0px;
@@ -547,7 +539,12 @@ h3 {
    font-family: 'Ekaterina Velikaya Two';
    font-size: 42.7px;
    font-style: italic;
-   color: #beb9a5;
+   color: #4d3e2a;
+
+}
+
+.time-title {
+   text-align: left;
 }
 
 .time-title:not(:last-child) {
@@ -581,7 +578,7 @@ h3 {
 }
 
 .text-day {
-   margin: 30px 0px 30px 0px;
+   margin-top: 30px;
 }
 
 //==========================================================
@@ -692,9 +689,11 @@ h3 {
       margin: 0px 0px 50px 0px;
    }
 }
-..g-form__title_respond .hidden {
-   display: none;
+
+.g-form__title_respond.hidden {
+   visibility: hidden;
 }
+
 .g-form__title_respond {
    position: fixed;
    margin: 0 auto;
@@ -704,7 +703,7 @@ h3 {
    border: 3px solid #4d3e2a;
    border-radius: 30px;
    background: #fff;
- 
+
 }
 
 //===================================================================================================================

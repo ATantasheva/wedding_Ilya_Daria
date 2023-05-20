@@ -162,15 +162,6 @@ main {
   padding: 150px 0px 0px 0px;
 }
 
-.opacity {
-  /* background-image: url('/wedding/img/fon-dekstop1.jpeg');
-  background-size: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  opacity: 0.35;*/
-}
-
 .fon-top {
   position: absolute;
   left: 0;
@@ -191,44 +182,44 @@ main {
   }
 }
 
-body:before {
-  content: "";
-  background: url("../img/fon_main.png");
-  position: fixed;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: right 50%;
-  z-index: 3;
-}
-
 /*
-.fon__scroll {
-   -webkit-background-image: url('../img/fon_main.png');
-   -webkit-background-repeat: no-repeat;
-   -webkit-background-attachment: fixed;
-   -webkit-background-position: right 50%;
-   -webkit-background-size: 100%;
-   background-image: url('../img/fon_main.png');
+body:before {
+   content: '';
+   background: url('../img/fon_main.png');
+   position: fixed;
    background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: right 50%;
    background-size: 100%;
-
-   @media (max-width:$md3+px) {
-      -webkit-background-image: url('../img/fon_main.png');
-      -webkit-background-repeat: no-repeat;
-      -webkit-background-attachment: fixed;
-      -webkit-background-position: right 70%;
-      -webkit-background-size: 100%;
-      background-image: url('../img/fon_main.png');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: right 70%;
-      background-size: 100%;
-   }
-
+   background-position: right 50%;
+   z-index: 3;
 }
 */
+.fon__scroll {
+  -webkit-background-image: url("../img/fon_main.png");
+  -webkit-background-repeat: no-repeat;
+  -webkit-background-attachment: fixed;
+  -webkit-background-position: right 50%;
+  -webkit-background-size: 100%;
+  background-image: url("../img/fon_main.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right 50%;
+  background-size: 100%;
+}
+@media (max-width: 767.98px) {
+  .fon__scroll {
+    -webkit-background-image: url("../img/fon_main.png");
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-attachment: fixed;
+    -webkit-background-position: right 70%;
+    -webkit-background-size: 100%;
+    background-image: url("../img/fon_main.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right 70%;
+    background-size: 100%;
+  }
+}
+
 .main-title {
   padding: 350px 30px 0px 30px;
   position: relative;
@@ -237,6 +228,7 @@ body:before {
   margin: 0 auto;
   text-align: center;
 }
+
 .h1 {
   opacity: 0.9;
   font-family: "Ekaterina Velikaya Two";
@@ -329,7 +321,7 @@ body:before {
 }
 
 .main-text {
-  font-family: Cormorant;
+  font-family: "Cormorant-Regular", serif;
   font-size: 28.8px;
   line-height: 1.2;
   font-weight: 700;
@@ -339,6 +331,7 @@ body:before {
 .t1 {
   margin: 270px 0px 58px 0px;
   text-transform: uppercase;
+  font-family: "Cormorant-Regular", serif;
 }
 @media (max-width: 767.98px) {
   .t1 {
@@ -542,7 +535,11 @@ h3 {
   font-family: "Ekaterina Velikaya Two";
   font-size: 42.7px;
   font-style: italic;
-  color: #beb9a5;
+  color: #4d3e2a;
+}
+
+.time-title {
+  text-align: left;
 }
 
 .time-title:not(:last-child) {
@@ -572,7 +569,7 @@ h3 {
 }
 
 .text-day {
-  margin: 30px 0px 30px 0px;
+  margin-top: 30px;
 }
 
 .g-form__input-wrapper .text {
@@ -661,6 +658,10 @@ h3 {
     line-height: 300%;
     margin: 0px 0px 50px 0px;
   }
+}
+
+.g-form__title_respond.hidden {
+  visibility: hidden;
 }
 
 .g-form__title_respond {
