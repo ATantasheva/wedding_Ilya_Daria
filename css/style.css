@@ -243,7 +243,7 @@ body:before {
   font-weight: 400;
   color: #505653;
   width: 550px;
-  height: 650px;
+  height: 750px;
 }
 @media (max-width: 767.98px) {
   .h1 {
@@ -471,6 +471,10 @@ a:hover {
   }
 }
 
+button {
+  color: #424745;
+}
+
 .location {
   cursor: pointer;
   display: inline-block;
@@ -662,6 +666,7 @@ h3 {
 
 .quote h2 {
   height: 150px;
+  margin: 0px 0px 0px 0px;
 }
 @media (max-width: 767.98px) {
   .quote h2 {

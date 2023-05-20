@@ -270,7 +270,7 @@ left: 0;
    font-weight: 400;
    color: #505653;
    width: 550px;
-   height: 650px;
+   height: 750px;
 
    @media (max-width:$md3+px) {
       font-size: 120px;
@@ -472,7 +472,9 @@ a {
       font-size: 24px;
    }
 }
-
+button {
+   color:#424745;
+}
 .location {
    cursor: pointer;
    display: inline-block;
@@ -695,7 +697,7 @@ h3 {
 
 .quote h2 {
    height: 150px;
-
+margin: 0px 0px 0px 0px;
    @media (max-width:$md3+px) {
       font-size: 40px;
    }
