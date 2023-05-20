@@ -11,7 +11,7 @@ $(function () {
       let appLink = "https://script.google.com/macros/s/AKfycbxbmCFnaCigUTHa2zCMGhWJIYPH7fz_FzNI1NCQkLUfM6CDinJgHDFxpUrGgy92YmFosg/exec";
 
       // Сообщение при успешной отправке данных
-      let successRespond = 'Сообщение успешно отправлено. Посмотрите результат <a target="_blank" href="https://docs.google.com/spreadsheets/d/1rvJvg_y2z0Va_an_JR5gwVbLJLSI5REeXdxcBM53WNc/edit?usp=sharing">тут</a>';
+      let successRespond = 'Сообщение успешно отправлено!';
 
       // Сообщение при ошибке в отправке данных
       let errorRespond = 'Не удалось отправить сообщение. Cвяжитесь с администратором сайта по адресу <a href="mailto:tkadasha98@gmail.com">tkadasha98@gmail.com</a>';
@@ -73,7 +73,7 @@ let formAlko = $(this).find('.g-form__title_main');
             preloader.css('opacity', '0');
 
             // Выводим ответ формы.
-            formRespond.html(successRespond).css('color', '#37b599');
+            formRespond.html(successRespond).css('color', '#4d3e2a');
 
             // Возвращаем активность кнопке отправки
             submitButton.prop('disabled', false);
