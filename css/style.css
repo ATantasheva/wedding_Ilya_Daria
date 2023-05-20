@@ -665,17 +665,19 @@ h3 {
   }
 }
 
+/*
 .g-form__title_respond.hidden {
-  visibility: hidden;
+   visibility: hidden;
 }
 
 .g-form__title_respond {
-  position: fixed;
-  margin: 0 auto;
-  top: 50%;
-  padding: 20px 40px;
-  line-height: 200%;
-  border: 3px solid #4d3e2a;
-  border-radius: 30px;
-  background: #fff;
-}
+   position: fixed;
+   margin: 0 auto;
+   top: 50%;
+   padding: 20px 40px;
+   line-height: 200%;
+   border: 3px solid #4d3e2a;
+   border-radius: 30px;
+   background: #fff;
+
+}*/

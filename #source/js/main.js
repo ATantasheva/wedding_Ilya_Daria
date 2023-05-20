@@ -3,9 +3,6 @@
 //ссылка для доступа к табл
 //https://docs.google.com/spreadsheets/d/1rvJvg_y2z0Va_an_JR5gwVbLJLSI5REeXdxcBM53WNc/edit?usp=sharing
 
-let formRespond = document.querySelector('.g-form__title_respond');
-console.log(formRespond);
-formRespond.classList.add('hidden');
 
 $(function () {
    $(".g-form").submit(function (event) {
