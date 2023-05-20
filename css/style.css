@@ -649,6 +649,9 @@ h3 {
   padding: 0px 0px 50px 0px;
 }
 
+.quote h2 {
+  height: 150px;
+}
 @media (max-width: 767.98px) {
   .quote h2 {
     font-size: 40px;
