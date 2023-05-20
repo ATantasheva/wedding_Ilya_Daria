@@ -25,8 +25,7 @@ $(function () {
 
       // h2 с ответом формы
       let formRespond = $(this).find('.g-form__title_respond');
-      console.log(formRespond);
-      formRespond.classList.add('hidden');
+
       //Выбор алкоголя
       let formAlko = $(this).find('.g-form__title_main');
       // h2 с заголовком формы
@@ -78,7 +77,7 @@ $(function () {
             preloader.css('opacity', '0');
 
             // Выводим ответ формы.
-            formRespond.className.remove('hidden');
+            formRespond.classList.remove('hidden');
             formRespond.html(successRespond).css('color', '#4d3e2a');
 
             // Возвращаем активность кнопке отправки
