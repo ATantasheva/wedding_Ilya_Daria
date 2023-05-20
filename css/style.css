@@ -270,19 +270,19 @@ body:before {
   .h1.and {
     font-size: 250px;
     top: 30%;
-    left: 45%;
+    left: 15%;
   }
 }
 @media (max-width: 479.98px) {
   .h1.and {
     font-size: 150px;
     top: 27%;
-    left: 45%;
+    left: -5%;
   }
 }
 @media (max-width: 280px) {
   .h1.and {
-    font-size: 120px;
+    font-size: 100px;
   }
 }
 
@@ -294,13 +294,13 @@ body:before {
 }
 @media (max-width: 767.98px) {
   .ilya {
-    right: 10%;
+    right: -20%;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 479.98px) {
   .ilya {
     top: 12%;
-    right: 5%;
+    right: -30%;
   }
 }
 
@@ -312,13 +312,18 @@ body:before {
 }
 @media (max-width: 767.98px) {
   .daria {
-    left: 10%;
+    left: -10%;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 479.98px) {
   .daria {
     top: 55%;
-    left: 5%;
+    left: -25%;
+  }
+}
+@media (max-width: 395px) {
+  .daria {
+    left: -25%;
   }
 }
 
@@ -665,19 +670,13 @@ h3 {
   }
 }
 
-/*
-.g-form__title_respond.hidden {
-   visibility: hidden;
-}
-
 .g-form__title_respond {
-   position: fixed;
-   margin: 0 auto;
-   top: 50%;
-   padding: 20px 40px;
-   line-height: 200%;
-   border: 3px solid #4d3e2a;
-   border-radius: 30px;
-   background: #fff;
-
-}*/
+  position: fixed;
+  margin: 0 auto;
+  top: 50%;
+  padding: 20px 40px;
+  line-height: 200%;
+  border: 3px solid #4d3e2a;
+  border-radius: 30px;
+  background: #fff;
+}

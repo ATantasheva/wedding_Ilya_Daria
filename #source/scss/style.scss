@@ -261,7 +261,7 @@ body:before {
    font-weight: 400;
    color: #505653;
    width: 550px;
-height: 650px;
+   height: 650px;
 
    @media (max-width:$md3+px) {
       font-size: 120px;
@@ -290,17 +290,17 @@ height: 650px;
    @media (max-width:$md3+px) {
       font-size: 250px;
       top: 30%;
-      left: 45%;
+      left: 15%;
    }
 
    @media (max-width:$md4+px) {
       font-size: 150px;
       top: 27%;
-      left: 45%;
+      left: -5%;
    }
 
    @media (max-width:280px) {
-      font-size: 120px;
+      font-size: 100px;
    }
 }
 
@@ -311,12 +311,12 @@ height: 650px;
    top: 20%;
 
    @media (max-width:$md3+px) {
-      right: 10%;
+      right: -20%;
    }
 
-   @media (max-width:$md3+px) {
+   @media (max-width:$md4+px) {
       top: 12%;
-      right: 5%;
+      right: -30%;
    }
 
 }
@@ -328,12 +328,16 @@ height: 650px;
    z-index: 3;
 
    @media (max-width:$md3+px) {
-      left: 10%;
+      left: -10%;
    }
 
-   @media (max-width:$md3+px) {
+   @media (max-width:$md4+px) {
       top: 55%;
-      left: 5%;
+      left: -25%;
+   }
+
+   @media (max-width:395px) {
+      left: -25%;
    }
 }
 
@@ -682,6 +686,7 @@ h3 {
 
 .quote h2 {
    height: 150px;
+
    @media (max-width:$md3+px) {
       font-size: 40px;
    }
@@ -692,10 +697,7 @@ h3 {
       margin: 0px 0px 50px 0px;
    }
 }
-/*
-.g-form__title_respond.hidden {
-   visibility: hidden;
-}
+
 
 .g-form__title_respond {
    position: fixed;
@@ -707,5 +709,4 @@ h3 {
    border-radius: 30px;
    background: #fff;
 
-}*/
-
+}
