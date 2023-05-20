@@ -236,6 +236,8 @@ body:before {
   line-height: 1.2;
   font-weight: 400;
   color: #505653;
+  width: 550px;
+  height: 650px;
 }
 @media (max-width: 767.98px) {
   .h1 {
@@ -262,7 +264,7 @@ body:before {
   color: #8f8f8f;
   position: absolute;
   top: 20%;
-  left: 45%;
+  left: 25%;
 }
 @media (max-width: 767.98px) {
   .h1.and {
@@ -286,7 +288,7 @@ body:before {
 
 .ilya {
   position: absolute;
-  right: 0;
+  right: -20%;
   z-index: 2;
   top: 20%;
 }

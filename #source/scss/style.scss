@@ -260,6 +260,8 @@ body:before {
    line-height: 1.2;
    font-weight: 400;
    color: #505653;
+   width: 550px;
+height: 650px;
 
    @media (max-width:$md3+px) {
       font-size: 120px;
@@ -283,7 +285,7 @@ body:before {
    color: #8f8f8f;
    position: absolute;
    top: 20%;
-   left: 45%;
+   left: 25%;
 
    @media (max-width:$md3+px) {
       font-size: 250px;
@@ -304,7 +306,7 @@ body:before {
 
 .ilya {
    position: absolute;
-   right: 0;
+   right: -20%;
    z-index: 2;
    top: 20%;
 
