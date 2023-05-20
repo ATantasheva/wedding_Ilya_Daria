@@ -87,25 +87,31 @@
 //прописываем на кажд вид шрифта такую штуку
 @font-face {
    font-family: 'Ekaterina Velikaya Two';
-   src: url('../ekaterinavelikayatwo.ttf');
-   src: local('☺'), url('../fonts/ekaterinavelikayatwo.woff') format('woff'), url('../fonts/ekaterinavelikayatwo.ttf') format('truetype'), url('../fonts/ekaterinavelikayatwo.svg') format('svg');
+   src: url('../fonts/ekaterinavelikayatwo.woff');
+   src: local('☺'), url('../fonts/ekaterinavelikayatwo.woff') format('woff'), url('../fonts/ekaterinavelikayatwo.woff2') format('woff2'), url('../fonts/ekaterinavelikayatwo.ttf') format('truetype'), url('../fonts/ekaterinavelikayatwo.svg') format('svg');
    font-weight: 400;
    font-style: normal;
 }
 
 @font-face {
-   font-family: Nicolettascript;
-   src: url('../Nicoletta-script.ttf');
-   src: local('☺'), url('../fonts/Nicoletta-script.woff') format('woff'), url('../fonts/Nicoletta-script.ttf') format('truetype'), url('../fonts/Nicoletta-script.svg') format('svg');
+   font-family: 'Nicolettascript';
+   src: url('../fonts/Nicoletta-script.woff');
+   src: local('☺'), url('../fonts/Nicoletta-script.woff') format('woff'), url('../fonts/Nicoletta-script.woff2') format('woff2'), url('../fonts/Nicoletta-script.ttf') format('truetype'), url('../fonts/Nicoletta-script.svg') format('svg');
    font-weight: 400;
    font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap&subset=cyrillic-ext');
-
+//@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap&subset=cyrillic-ext');
+@font-face {
+   font-family: 'Cormorant-Regular';
+   src: url('../fonts/Cormorant-Regular.woff');
+   src: local('☺'), url('../fonts/Cormorant-Regular.woff') format('woff'), url('../fonts/Cormorant-Regular.woff2') format('woff2'), url('../fonts/Cormorant-Regular.ttf') format('truetype'), url('../fonts/Cormorant-Regular.svg') format('svg');
+   font-weight: 400;
+   font-style: normal;
+}
 
 //<Шрифт по умолчанию>==========================================================================================
-$fontfamily: "Cormorant";
+$fontfamily: 'Cormorant-Regular', serif;
 //</Шрифт по умолчанию>==========================================================================================
 
 //</ШРИФТЫ>==============================================================================================================
@@ -207,6 +213,17 @@ main {
 
 }
 
+body:before {
+   content: '';
+   background: url('../img/fon_main.png');
+   position: fixed;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-position: right 50%;
+   z-index: 3;
+}
+
+/*
 .fon__scroll {
    -webkit-background-image: url('../img/fon_main.png');
    -webkit-background-repeat: no-repeat;
@@ -233,7 +250,7 @@ main {
    }
 
 }
-
+*/
 .main-title {
    padding: 350px 30px 0px 30px;
    position: relative;
@@ -338,6 +355,7 @@ main {
 
 .t1 {
    margin: 270px 0px 58px 0px;
+   text-transform: uppercase;
 
    @media (max-width:$md3+px) {
       margin: 170px 0px 38px 0px;
@@ -646,6 +664,8 @@ h3 {
       // text-transform: uppercase;
       font-size: 30px;
       margin: 0px 0px 100px 0px;
+      -webkit-background-color: transparent;
+      background-color: transparent;
 
       @media (max-width:$md3+px) {
          margin: 0px 0px 40px 0px;
@@ -672,15 +692,19 @@ h3 {
       margin: 0px 0px 50px 0px;
    }
 }
-
+..g-form__title_respond .hidden {
+   display: none;
+}
 .g-form__title_respond {
-   position: absolute;
+   position: fixed;
    margin: 0 auto;
    top: 50%;
-   padding: 50px 70px;
+   padding: 20px 40px;
    line-height: 200%;
    border: 3px solid #4d3e2a;
    border-radius: 30px;
+   background: #fff;
+ 
 }
 
 //===================================================================================================================
