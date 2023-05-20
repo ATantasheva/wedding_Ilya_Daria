@@ -74,8 +74,8 @@ $(function () {
             preloader.css('opacity', '0');
 
             // Выводим ответ формы.
-            
-            formRespond.html(successRespond).css('color', '#4d3e2a');
+
+            formRespond.html(successRespond).css('color', '#4d3e2a', 'border', '3px solid #4d3e2a', 'padding', '20px 40px');
 
             // Возвращаем активность кнопке отправки
             submitButton.prop('disabled', false);

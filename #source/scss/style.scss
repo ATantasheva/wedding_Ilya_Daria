@@ -205,18 +205,27 @@ main {
 
 }
 
-/*
+body {
+   position: relative;
+}
 body:before {
    content: '';
-   background: url('../img/fon_main.png');
+   background: url('../img/fon_main.png') no-repeat center center;
    position: fixed;
-   background-repeat: no-repeat;
-   background-size: 100%;
-   background-position: right 50%;
-   z-index: 3;
+   background-size: cover;
+   height: 100%;
+left: 0;
+ top: 0;
+   width: 100%;
+   //background-position: right 50%;
+   z-index: -1;
+   will-change: transform;
+   @media (max-width:$md3+px) {
+     
+   }
 }
-*/
 
+/*
 .fon__scroll {
    -webkit-background-image: url('../img/fon_main.png');
    -webkit-background-repeat: no-repeat;
@@ -243,7 +252,7 @@ body:before {
    }
 
 }
-
+*/
 .main-title {
    padding: 350px 30px 0px 30px;
    position: relative;
@@ -703,10 +712,10 @@ h3 {
    position: fixed;
    margin: 0 auto;
    top: 50%;
-   padding: 20px 40px;
+   
    line-height: 200%;
-   border: 3px solid #4d3e2a;
+   
    border-radius: 30px;
    background: #fff;
-
+z-index: 7;
 }
