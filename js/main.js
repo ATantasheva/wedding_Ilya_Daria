@@ -77,7 +77,7 @@ $(function () {
             preloader.css('opacity', '0');
 
             // Выводим ответ формы.
-            formRespond.classList.remove('hidden');
+            
             formRespond.html(successRespond).css('color', '#4d3e2a');
 
             // Возвращаем активность кнопке отправки
