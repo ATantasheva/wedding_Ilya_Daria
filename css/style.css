@@ -174,9 +174,19 @@ main {
 .fon-top img {
   max-width: 100%;
 }
+@media (max-width: 767.98px) {
+  .fon-top img {
+    max-width: 350px;
+  }
+}
+@media (max-width: 479.98px) {
+  .fon-top img {
+    max-width: 250px;
+  }
+}
 
 .fon__scroll {
-  background-image: url("/img/fon_main.png");
+  background-image: url("../img/fon_main.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right 50%;
@@ -184,7 +194,7 @@ main {
 }
 @media (max-width: 767.98px) {
   .fon__scroll {
-    background-image: url("/img/fon_main.png");
+    background-image: url("../img/fon_main.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right 70%;
@@ -200,7 +210,6 @@ main {
   margin: 0 auto;
   text-align: center;
 }
-
 .h1 {
   opacity: 0.9;
   font-family: "Ekaterina Velikaya Two";
@@ -208,6 +217,16 @@ main {
   line-height: 1.2;
   font-weight: 400;
   color: #505653;
+}
+@media (max-width: 767.98px) {
+  .h1 {
+    font-size: 120px;
+  }
+}
+@media (max-width: 479.98px) {
+  .h1 {
+    font-size: 100px;
+  }
 }
 
 .h1.and {
@@ -221,6 +240,20 @@ main {
   top: 20%;
   left: 45%;
 }
+@media (max-width: 767.98px) {
+  .h1.and {
+    font-size: 250px;
+    top: 30%;
+    left: 45%;
+  }
+}
+@media (max-width: 479.98px) {
+  .h1.and {
+    font-size: 150px;
+    top: 27%;
+    left: 45%;
+  }
+}
 
 .ilya {
   position: absolute;
@@ -228,12 +261,34 @@ main {
   z-index: 2;
   top: 20%;
 }
+@media (max-width: 767.98px) {
+  .ilya {
+    right: 10%;
+  }
+}
+@media (max-width: 767.98px) {
+  .ilya {
+    top: 12%;
+    right: 5%;
+  }
+}
 
 .daria {
   position: absolute;
   left: 0;
   top: 65%;
   z-index: 2;
+}
+@media (max-width: 767.98px) {
+  .daria {
+    left: 10%;
+  }
+}
+@media (max-width: 767.98px) {
+  .daria {
+    top: 55%;
+    left: 5%;
+  }
 }
 
 .main-text {
@@ -245,7 +300,23 @@ main {
 }
 
 .t1 {
-  margin: 170px 0px 58px 0px;
+  margin: 270px 0px 58px 0px;
+}
+@media (max-width: 767.98px) {
+  .t1 {
+    margin: 170px 0px 38px 0px;
+  }
+}
+@media (max-width: 479.98px) {
+  .t1 {
+    margin: 100px 0px 28px 0px;
+  }
+}
+
+.rotate {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .arrow {
@@ -262,9 +333,29 @@ h2 {
   font-size: 64px;
   margin: 50px 0px 50px 0px;
 }
+@media (max-width: 479.98px) {
+  h2 {
+    font-size: 54px;
+  }
+}
+@media (max-width: 380px) {
+  h2 {
+    font-size: 44px;
+  }
+}
 
 h2 span {
   font-size: 53.4px;
+}
+@media (max-width: 479.98px) {
+  h2 span {
+    font-size: 43px;
+  }
+}
+@media (max-width: 380px) {
+  h2 span {
+    font-size: 34px;
+  }
 }
 
 .weekday {
@@ -314,8 +405,26 @@ a:hover {
 
 .text {
   display: block;
+  text-align: center;
   font-size: 37px;
   font-family: "Cormorant";
+  max-width: 670px;
+  margin: 0 auto;
+}
+@media (max-width: 767.98px) {
+  .text {
+    font-size: 30px;
+  }
+}
+@media (max-width: 479.98px) {
+  .text {
+    font-size: 26px;
+  }
+}
+@media (max-width: 380px) {
+  .text {
+    font-size: 24px;
+  }
 }
 
 .location {
@@ -334,6 +443,18 @@ a:hover {
 .location:hover {
   background-color: #c6c1a8;
 }
+@media (max-width: 479.98px) {
+  .location {
+    margin: 30px 0px 30px 0px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  a {
+    font-size: 27px;
+  }
+}
 
 h3 {
   font-size: 32px;
@@ -345,9 +466,18 @@ h3 {
   margin: 0px 0px 50px 0px;
 }
 
+.margin {
+  margin: 0 auto 20px;
+}
+
 .time-block {
   position: relative;
-  margin: 0px 0px 50px 0px;
+  margin: 0px 0px 50px 100px;
+}
+@media (max-width: 479.98px) {
+  .time-block {
+    margin: 0px 0px 50px 50px;
+  }
 }
 
 .time-block::before {
@@ -365,6 +495,10 @@ h3 {
   padding: 0px 0px 0px 50px;
 }
 
+.time-list .text {
+  text-align: left;
+}
+
 .time {
   font-family: "Ekaterina Velikaya Two";
   font-size: 42.7px;
@@ -376,10 +510,6 @@ h3 {
   margin: 0px 0px 40px 0px;
 }
 
-.text-margin {
-  margin: 0px 0px 40px 0px;
-}
-
 .organizer {
   margin: 0 auto;
   max-width: 540px;
@@ -388,18 +518,12 @@ h3 {
   padding: 40px 20px;
 }
 
-.organizator {
-  display: inline-block;
-  background-color: #cbc5af;
-  padding: 20px 40px;
-  border-radius: 30px;
-  border: 2.5px solid #cbc5af;
-  -webkit-transition: 0.5s ease 0s;
-  -o-transition: 0.5s ease 0s;
-  transition: 0.5s ease 0s;
+.organizer .location {
+  margin: 0px 0px 0px 0px;
 }
-.organizator:hover {
-  background-color: transparent;
+
+.location.organizator {
+  padding: 20px 40px;
 }
 
 .day {
@@ -409,15 +533,39 @@ h3 {
 }
 
 .text-day {
-  margin: 30px 0px 50px 0px;
+  margin: 30px 0px 30px 0px;
+}
+
+.g-form__input-wrapper .text {
+  text-align: left;
 }
 
 .text-margin {
   margin: 0px 0px 15px 0px;
 }
+@media (max-width: 767.98px) {
+  .text-margin {
+    font-size: 30px;
+  }
+}
+@media (max-width: 380px) {
+  .text-margin {
+    font-size: 24px;
+  }
+}
 
 .form__input {
   margin: 0px 0px 10px 0px;
+}
+@media (max-width: 767.98px) {
+  .form__input {
+    font-size: 26px;
+  }
+}
+@media (max-width: 380px) {
+  .form__input {
+    font-size: 24px;
+  }
 }
 
 .hidden {
@@ -440,19 +588,33 @@ h3 {
   margin: 0px 20px 0px 0px;
 }
 .g-form__button {
-  font-family: "Cormorant";
-  padding: 10px 30px;
-  background: #cbc5af;
-  color: #000;
-  -webkit-transition: all 0.7s ease 0s;
-  -o-transition: all 0.7s ease 0s;
-  transition: all 0.7s ease 0s;
-  border-radius: 30px;
-  text-transform: uppercase;
   font-size: 30px;
   margin: 0px 0px 100px 0px;
+}
+@media (max-width: 767.98px) {
+  .g-form__button {
+    margin: 0px 0px 40px 0px;
+  }
+}
+@media (max-width: 479.98px) {
+  .g-form {
+    margin: 0px 0px 10px 0px;
+  }
 }
 
 .quote {
   padding: 0px 0px 50px 0px;
+}
+
+@media (max-width: 767.98px) {
+  .quote h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 479.98px) {
+  .quote h2 {
+    font-size: 35px;
+    line-height: 300%;
+    margin: 0px 0px 50px 0px;
+  }
 }

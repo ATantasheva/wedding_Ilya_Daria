@@ -196,17 +196,24 @@ main {
 
 .fon-top img {
    max-width: 100%;
+   @media (max-width:$md3+px) {
+      max-width: 350px;
+         }
+   @media (max-width:$md4+px) {
+max-width: 250px;
+   }
+   
 }
 
 .fon__scroll {
-   background-image: url('/img/fon_main.png');
+   background-image: url('../img/fon_main.png');
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-position: right 50%;
    background-size: 100%;
 
    @media (max-width:$md3+px) {
-      background-image: url('/img/fon_main.png');
+      background-image: url('../img/fon_main.png');
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: right 70%;
@@ -220,9 +227,11 @@ main {
    position: relative;
    max-width: 685px;
    height: 100%;
-  
    margin: 0 auto;
    text-align: center;
+   @media (max-width:$md3+px) {
+      
+   }
 }
 
 .h1 {
@@ -232,6 +241,12 @@ main {
    line-height: 1.2;
    font-weight: 400;
    color: #505653;
+   @media (max-width:$md3+px) {
+      font-size: 120px;
+   }
+   @media (max-width:$md4+px)  {
+      font-size: 100px;
+   }
 }
 
 .h1.and {
@@ -244,7 +259,16 @@ main {
    position: absolute;
    top: 20%;
    left: 45%;
-
+   @media (max-width:$md3+px) {
+      font-size: 250px;
+      top: 30%;
+      left: 45%;
+   }
+   @media (max-width:$md4+px) {
+      font-size: 150px;
+      top: 27%;
+      left: 45%;
+   }
 }
 
 .ilya {
@@ -252,6 +276,13 @@ main {
    right: 0;
    z-index: 2;
    top: 20%;
+   @media (max-width:$md3+px) {
+      right: 10%;
+   }
+   @media (max-width:$md3+px) {
+      top: 12%;
+      right: 5%;
+   }
 }
 
 .daria {
@@ -259,6 +290,13 @@ main {
    left: 0;
    top: 65%;
    z-index: 2;
+   @media (max-width:$md3+px) {
+      left: 10%;
+   }
+   @media (max-width:$md3+px) {
+      top: 55%;
+      left: 5%;
+   }
 }
 
 //======================================
@@ -271,9 +309,19 @@ main {
 }
 
 .t1 {
-   margin: 170px 0px 58px 0px;
-}
+   margin: 270px 0px 58px 0px;
+   @media (max-width:$md3+px) {
+      margin: 170px 0px 38px 0px;
+   }
+   @media (max-width:$md4+px) {
+      margin: 100px 0px 28px 0px;
+   }
 
+}
+.rotate {
+   transform: rotate(90deg);
+   
+}
 .arrow {
    width: 52px;
    height: 45px;
@@ -287,10 +335,22 @@ h2 {
    color: #4d3e2a;
    font-size: 64px;
    margin: 50px 0px 50px 0px;
+   @media (max-width:$md4+px) {
+      font-size: 54px;
+   }
+   @media (max-width:380px) {
+      font-size: 44px;
+   }
 }
 
 h2 span {
    font-size: 53.4px;
+   @media (max-width:$md4+px) {
+      font-size: 43px;
+   }
+   @media (max-width:380px) {
+      font-size: 34px;
+   }
 }
 
 .weekday {
@@ -330,9 +390,20 @@ a {
 }
 .text {
    display: block;
+   text-align: center;
    font-size: 37px;
    font-family: $fontfamily;
-
+   max-width: 670px;
+   margin: 0 auto;
+   @media (max-width:$md3+px) {
+      font-size: 30px;
+   }
+   @media (max-width:$md4+px) {
+      font-size: 26px;
+   }
+   @media (max-width:380px) {
+      font-size: 24px;
+   }
 }
 .location {
    cursor: pointer;
@@ -347,6 +418,16 @@ a {
          &:hover {
             background-color: #c6c1a8;
          }
+         @media (max-width:$md4+px) {
+            //padding: 8px 25px 8px 25px;
+            margin: 30px 0px 30px 0px;
+            font-size: 30px;
+         }
+}
+a {
+   @media (max-width:$md4+px) {
+      font-size: 27px;
+   }
 }
 h3 {
    font-size: 32px;
@@ -358,11 +439,17 @@ text-transform: uppercase;
 .wedding__counter, .wishes-block {
    margin: 0px 0px 50px 0px;
 }
+.margin {
+   margin: 0 auto 20px;
+}
 //==========================================================
 //тайминг
 .time-block {
    position: relative;
-   margin: 0px 0px 50px 0px;
+   margin: 0px 0px 50px 100px;
+    @media (max-width:$md4+px) {
+      margin: 0px 0px 50px 50px;
+    }
 }
 .time-block::before {
    content: '';
@@ -379,6 +466,9 @@ text-transform: uppercase;
    text-align: left;
    padding: 0px 0px 0px 50px;
 }
+.time-list .text {
+   text-align: left;
+}
 .time {
    font-family: 'Ekaterina Velikaya Two';
    font-size: 42.7px;
@@ -388,9 +478,7 @@ color: #beb9a5;
 .time-title:not(:last-child) {
    margin: 0px 0px 40px 0px;
 }
-.text-margin {
-   margin: 0px 0px 40px 0px;
-}
+
 
 .organizer {
    margin: 0 auto;
@@ -399,16 +487,13 @@ color: #beb9a5;
 border-radius: 50px;
 padding: 40px 20px;
 }
-.organizator {
-   display: inline-block;
-   background-color: #cbc5af;
+.organizer .location {
+   margin: 0px 0px 0px 0px;
+}
+.location.organizator {
+  
    padding: 20px 40px;
-   border-radius: 30px;
-   border: 2.5px solid #cbc5af;
-   transition: 0.5s ease 0s;
-   &:hover {
-      background-color: transparent;
-   }
+ 
 }
 .day {
    font-family: 'Ekaterina Velikaya Two';
@@ -417,18 +502,33 @@ padding: 40px 20px;
 
 }
 .text-day {
-   margin: 30px 0px 50px 0px;
+   margin: 30px 0px 30px 0px;
 }
 //==========================================================
 //отправка формы
 .form {
   
 }
+.g-form__input-wrapper .text {
+   text-align: left;
+}
 .text-margin {
    margin: 0px 0px 15px 0px;
+   @media (max-width:$md3+px) {
+font-size: 30px;
+   }
+   @media (max-width:380px) {
+      font-size: 24px;
+   }
 }
 .form__input {
    margin: 0px 0px 10px 0px;
+   @media (max-width:$md3+px) {
+      font-size: 26px;
+            }
+            @media (max-width:380px) {
+               font-size: 24px;
+                     }
 }
 .hidden {
    margin: 0px 0px 0px 0px;
@@ -457,6 +557,7 @@ padding: 40px 20px;
 
    &__input {
       margin: 0px 20px 0px 0px;
+     
       &_name {
          background-color: transparent;
          border-bottom: 1px solid #cbc5af;
@@ -471,20 +572,29 @@ padding: 40px 20px;
    &__button-wrapper {}
 
    &__button {
-      font-family: $fontfamily;
-      padding: 10px 30px;
-      background: #cbc5af;
-      color: #000;
-      transition: all 0.7s ease 0s;
-      border-radius: 30px;
-      text-transform: uppercase;
+     // text-transform: uppercase;
       font-size: 30px;
 margin: 0px 0px 100px 0px;
-     
+@media (max-width:$md3+px) {
+   margin: 0px 0px 40px 0px;
+}
+   }
+   @media (max-width:$md4+px) {
+      margin: 0px 0px 10px 0px;
    }
 }
 .quote {
    padding: 0px 0px 50px 0px;
+}
+.quote h2 {
+   @media (max-width:$md3+px) {
+font-size: 40px;
+   }
+   @media (max-width:$md4+px) {
+      font-size: 35px;
+      line-height: 300%;
+      margin: 0px 0px 50px 0px;
+         }
 }
 //===================================================================================================================
 
