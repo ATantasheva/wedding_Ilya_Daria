@@ -227,7 +227,7 @@ body:before {
 }
 */
 .main-title {
-  padding: 350px 30px 0px 30px;
+  padding: 350px 30px 100px 30px;
   position: relative;
   max-width: 685px;
   height: 100%;
@@ -291,6 +291,11 @@ body:before {
     font-size: 100px;
   }
 }
+@media (max-width: 395px) {
+  .h1.and {
+    left: -42%;
+  }
+}
 
 .ilya {
   position: absolute;
@@ -307,6 +312,16 @@ body:before {
   .ilya {
     top: 12%;
     right: -30%;
+  }
+}
+@media (max-width: 395px) {
+  .ilya {
+    left: -42%;
+  }
+}
+@media (max-width: 350px) {
+  .ilya {
+    font-size: 80px;
   }
 }
 
@@ -329,7 +344,12 @@ body:before {
 }
 @media (max-width: 395px) {
   .daria {
-    left: -25%;
+    left: -42%;
+  }
+}
+@media (max-width: 350px) {
+  .daria {
+    font-size: 80px;
   }
 }
 
@@ -689,4 +709,8 @@ h3 {
   border-radius: 30px;
   background: #fff;
   z-index: 7;
+}
+
+.g-form__input-wrapper_hidden input {
+  background: transparent;
 }
