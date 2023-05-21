@@ -703,9 +703,14 @@ h3 {
 
 .g-form__title_respond {
   position: fixed;
-  margin: 0 auto;
   top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   line-height: 200%;
+  font-size: 40px;
   border-radius: 30px;
   background: #fff;
   z-index: 7;
@@ -713,4 +718,21 @@ h3 {
 
 .g-form__input-wrapper_hidden input {
   background: transparent;
+}
+
+.element-animation {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  -webkit-transition: all 3.5s;
+  -o-transition: all 3.5s;
+  transition: all 3.5s;
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
 }

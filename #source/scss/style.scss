@@ -311,6 +311,7 @@ body:before {
    @media (max-width:280px) {
       font-size: 100px;
    }
+
    @media (max-width:395px) {
       left: -42%;
    }
@@ -330,11 +331,13 @@ body:before {
       top: 12%;
       right: -30%;
    }
+
    @media (max-width:395px) {
       left: -42%;
    }
+
    @media (max-width:350px) {
-font-size: 80px;
+      font-size: 80px;
    }
 }
 
@@ -356,9 +359,10 @@ font-size: 80px;
    @media (max-width:395px) {
       left: -42%;
    }
+
    @media (max-width:350px) {
       font-size: 80px;
-         }
+   }
 }
 
 //======================================
@@ -726,11 +730,12 @@ h3 {
 
 .g-form__title_respond {
    position: fixed;
-   margin: 0 auto;
    top: 50%;
-
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%, -50%);
    line-height: 200%;
-
+font-size: 40px;
    border-radius: 30px;
    background: #fff;
    z-index: 7;
@@ -739,3 +744,13 @@ h3 {
 .g-form__input-wrapper_hidden input {
    background: transparent;
 }
+
+.element-animation {
+   opacity: 0;
+  transform: translateY(20px);
+}
+.element-animation.element-show {
+   opacity: 1;
+   transition: all 3.5s;
+   transform: translateY(0%);
+ }

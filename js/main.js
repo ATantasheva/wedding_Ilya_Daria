@@ -3,8 +3,27 @@
 //ссылка для доступа к табл
 //https://docs.google.com/spreadsheets/d/1rvJvg_y2z0Va_an_JR5gwVbLJLSI5REeXdxcBM53WNc/edit?usp=sharing
 
+function onEntry(entry) {
+   entry.forEach(change => {
+     if (change.isIntersecting) {
+      change.target.classList.add('element-show');
+     }
+   });
+ }
+ 
+ let options = {
+   threshold: [0.5] };
+ let observer = new IntersectionObserver(onEntry, options);
+ let elements = document.querySelectorAll('.element-animation');
+ 
+ for (let elm of elements) {
+   observer.observe(elm);
+ }
 
 $(function () {
+
+
+
    $(".g-form").submit(function (event) {
       event.preventDefault();
 
@@ -75,7 +94,7 @@ $(function () {
 
             // Выводим ответ формы.
 
-            formRespond.html(successRespond).css('color', '#4d3e2a', 'border', '3px solid #4d3e2a', 'padding', '20px 40px');
+            formRespond.html(successRespond).css({'color': '#4d3e2a', 'border': '3px solid #4d3e2a', 'padding': '20px 40px 35px' });
 
             // Возвращаем активность кнопке отправки
             submitButton.prop('disabled', false);
