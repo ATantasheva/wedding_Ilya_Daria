@@ -313,6 +313,9 @@ body:before {
    }
 
    @media (max-width:395px) {
+      left: -22%;
+   }
+   @media (max-width:350px) {
       left: -42%;
    }
 }
@@ -329,15 +332,16 @@ body:before {
 
    @media (max-width:$md4+px) {
       top: 12%;
-      right: -30%;
+      right: -40%;
    }
 
    @media (max-width:395px) {
-      left: -42%;
+      //left: -42%;
    }
 
    @media (max-width:350px) {
       font-size: 80px;
+      left: -45%;
    }
 }
 
@@ -357,11 +361,12 @@ body:before {
    }
 
    @media (max-width:395px) {
-      left: -42%;
+      left: -32%;
    }
 
    @media (max-width:350px) {
       font-size: 80px;
+      left: -45%;
    }
 }
 
@@ -521,6 +526,7 @@ a {
 }
 
 h3 {
+   margin: 0px 0px 30px 0px;
    font-size: 32px;
    color: #424745;
    text-transform: uppercase;
@@ -536,7 +542,9 @@ h3 {
 .margin {
    margin: 0 auto 20px;
 }
-
+.counter-img {
+   margin: 50px 0px 40px 0px;
+}
 //==========================================================
 //тайминг
 .time-block {
@@ -614,7 +622,47 @@ h3 {
 .text-day {
    margin-top: 30px;
 }
-
+//=========================================================
+//счетчик
+.timer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.counter__round {
+   display: block;
+   height: 100px;
+   width: 100px;
+   border-radius: 50%;
+border: 3px solid #c6c1a8;
+font-size: 45px;
+font-weight: 900;
+line-height: 170%;
+@media (max-width:555px) {
+   height: 70px;
+   width: 70px;
+   line-height: 120%;
+}
+@media (max-width:380px) {
+   font-size: 35px;
+   height: 60px;
+   width: 60px;
+}
+}
+.counter__round:not(:last-child) {
+   margin-right: 30px;
+   @media (max-width:555px) {
+      margin-right:15px;
+   }
+}
+.label {
+   font-family: $fontfamily;
+   font-size: 25px;
+   margin: 10px 0px 0px 0px;
+   @media (max-width:380px) {
+      font-size: 20px;
+   }
+}
 //==========================================================
 //отправка формы
 .form {}
