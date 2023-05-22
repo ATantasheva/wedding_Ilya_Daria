@@ -211,7 +211,7 @@ body {
 
 body:before {
    content: '';
-   background: url('../img/fon_main.png') no-repeat;
+   background: url('../img/fon_main.png') no-repeat center center;
    position: fixed;
    background-size: cover;
    height: 100%;
