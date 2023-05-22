@@ -256,6 +256,11 @@ body:before {
     font-size: 80px;
   }
 }
+@media (max-width: 290px) {
+  .h1 {
+    font-size: 70px;
+  }
+}
 
 .h1.and {
   font-family: Nicolettascript;
@@ -287,7 +292,7 @@ body:before {
     left: -4%;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 424px) {
   .h1.and {
     font-size: 200px;
     left: -14%;
@@ -304,6 +309,11 @@ body:before {
     left: -20%;
   }
 }
+@media (max-width: 290px) {
+  .h1.and {
+    left: -40%;
+  }
+}
 
 .ilya {
   position: absolute;
@@ -316,11 +326,22 @@ body:before {
     right: -30%;
   }
 }
+@media (max-width: 424px) {
+  .ilya {
+    right: -40%;
+  }
+}
 @media (max-width: 410px) {
   .ilya {
     right: -50%;
   }
 }
+@media (max-width: 290px) {
+  .ilya {
+    right: -70%;
+  }
+}
+
 .daria {
   position: absolute;
   left: 0;
@@ -338,6 +359,12 @@ body:before {
     top: 60%;
   }
 }
+@media (max-width: 424px) {
+  .daria {
+    left: -30%;
+    top: 45%;
+  }
+}
 @media (max-width: 410px) {
   .daria {
     left: -38%;
@@ -347,6 +374,11 @@ body:before {
 @media (max-width: 350px) {
   .daria {
     left: -42%;
+  }
+}
+@media (max-width: 290px) {
+  .daria {
+    left: -62%;
   }
 }
 
