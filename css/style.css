@@ -188,16 +188,17 @@ body {
 
 body:before {
   content: "";
-  background: url("../img/fon_main.png") no-repeat center center;
+  background: url("../img/fon_main.png") no-repeat;
   position: fixed;
   background-size: cover;
   height: 100%;
-  left: 0;
-  top: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   z-index: -1;
   will-change: transform;
 }
+
 /*
 .fon__scroll {
    -webkit-background-image: url('../img/fon_main.png');
