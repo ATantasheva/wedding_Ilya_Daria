@@ -211,14 +211,14 @@ body {
 
 body:before {
    content: '';
-   background: url('../img/fon_main.png') no-repeat center center;
+   background: url('../img/fon_main.png') no-repeat right bottom;
    position: fixed;
    background-size: cover;
    height: 100%;
    right: 0;
   bottom: 0;
    width: 100%;
-   //background-position: right 50%;
+   background-position: right 50%;
    z-index: -1;
    will-change: transform;
 }
