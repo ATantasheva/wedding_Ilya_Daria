@@ -166,6 +166,28 @@ main {
   position: absolute;
   left: 0;
   top: 0;
+  z-index: -1;
+}
+
+.fon-top.tel {
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .fon-top.tel {
+    display: block;
+  }
+  .fon-top.tel img {
+    max-width: 100%;
+  }
+}
+
+.fon-top.pk {
+  display: none;
+}
+@media (min-width: 767.98px) {
+  .fon-top.pk {
+    display: block;
+  }
 }
 
 .fon-top img {
@@ -200,34 +222,6 @@ body:before {
   will-change: transform;
 }
 
-/*
-.fon__scroll {
-   -webkit-background-image: url('../img/fon_main.png');
-   -webkit-background-repeat: no-repeat;
-   -webkit-background-attachment: fixed;
-   -webkit-background-position: right 50%;
-   -webkit-background-size: 100%;
-   background-image: url('../img/fon_main.png');
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: right 50%;
-   background-size: 100%;
-
-   @media (max-width:$md3+px) {
-      -webkit-background-image: url('../img/fon_main.png');
-      -webkit-background-repeat: no-repeat;
-      -webkit-background-attachment: fixed;
-      -webkit-background-position: right 70%;
-      -webkit-background-size: 100%;
-      background-image: url('../img/fon_main.png');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: right 70%;
-      background-size: 100%;
-   }
-
-}
-*/
 .main-title {
   padding: 350px 30px 100px 30px;
   position: relative;
@@ -257,7 +251,7 @@ body:before {
     font-size: 100px;
   }
 }
-@media (max-width: 280px) {
+@media (max-width: 420px) {
   .h1 {
     font-size: 80px;
   }
@@ -266,7 +260,7 @@ body:before {
 .h1.and {
   font-family: Nicolettascript;
   opacity: 0.38;
-  font-size: 320px;
+  font-size: 360px;
   line-height: 1.2;
   font-weight: 400;
   color: #8f8f8f;
@@ -278,29 +272,36 @@ body:before {
   .h1.and {
     font-size: 250px;
     top: 30%;
-    left: 15%;
+    left: 20%;
+  }
+}
+@media (max-width: 630px) {
+  .h1.and {
+    left: 5%;
   }
 }
 @media (max-width: 479.98px) {
   .h1.and {
-    font-size: 150px;
-    top: 27%;
-    left: -5%;
+    font-size: 280px;
+    top: 20%;
+    left: -4%;
   }
 }
-@media (max-width: 280px) {
+@media (max-width: 420px) {
   .h1.and {
-    font-size: 100px;
+    font-size: 200px;
+    left: -14%;
   }
 }
-@media (max-width: 395px) {
+@media (max-width: 380px) {
   .h1.and {
-    left: -22%;
+    top: 25%;
+    font-size: 170px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 360px) {
   .h1.and {
-    left: -42%;
+    left: -20%;
   }
 }
 
@@ -310,24 +311,16 @@ body:before {
   z-index: 2;
   top: 20%;
 }
-@media (max-width: 767.98px) {
-  .ilya {
-    right: -20%;
-  }
-}
 @media (max-width: 479.98px) {
   .ilya {
-    top: 12%;
-    right: -40%;
+    right: -30%;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 410px) {
   .ilya {
-    font-size: 80px;
-    left: -45%;
+    right: -50%;
   }
 }
-
 .daria {
   position: absolute;
   left: 0;
@@ -336,24 +329,24 @@ body:before {
 }
 @media (max-width: 767.98px) {
   .daria {
-    left: -10%;
+    left: -8%;
   }
 }
 @media (max-width: 479.98px) {
   .daria {
-    top: 55%;
-    left: -25%;
+    left: -20%;
+    top: 60%;
   }
 }
-@media (max-width: 395px) {
+@media (max-width: 410px) {
   .daria {
-    left: -32%;
+    left: -38%;
+    top: 45%;
   }
 }
 @media (max-width: 350px) {
   .daria {
-    font-size: 80px;
-    left: -45%;
+    left: -42%;
   }
 }
 
@@ -361,7 +354,7 @@ body:before {
   font-family: "Cormorant-Regular", serif;
   font-size: 28.8px;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 400;
   color: #4d3e2a;
 }
 
@@ -668,6 +661,7 @@ h3 {
   font-family: "Cormorant-Regular", serif;
   font-size: 25px;
   margin: 10px 0px 0px 0px;
+  font-weight: 400;
 }
 @media (max-width: 380px) {
   .label {

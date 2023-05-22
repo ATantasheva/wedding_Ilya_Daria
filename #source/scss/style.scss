@@ -184,17 +184,31 @@ main {
 
 }
 
-
-
 .fon-top {
    position: absolute;
    left: 0;
    top: 0;
+   z-index: -1;
 }
+.fon-top.tel {
+   display: none;
+   @media (max-width:$md3+px) {
+      display: block;
+      img {
+      max-width: 100%;
+      }
+   }
 
+}
+.fon-top.pk {
+   display: none;
+   @media (min-width:$md3+px) {
+      display: block;
+   }
+}
 .fon-top img {
    max-width: 100%;
-
+;
    @media (max-width:$md3+px) {
       max-width: 350px;
    }
@@ -204,7 +218,6 @@ main {
    }
 
 }
-
 body {
    position: relative;
 }
@@ -223,34 +236,6 @@ body:before {
    will-change: transform;
 }
 
-/*
-.fon__scroll {
-   -webkit-background-image: url('../img/fon_main.png');
-   -webkit-background-repeat: no-repeat;
-   -webkit-background-attachment: fixed;
-   -webkit-background-position: right 50%;
-   -webkit-background-size: 100%;
-   background-image: url('../img/fon_main.png');
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: right 50%;
-   background-size: 100%;
-
-   @media (max-width:$md3+px) {
-      -webkit-background-image: url('../img/fon_main.png');
-      -webkit-background-repeat: no-repeat;
-      -webkit-background-attachment: fixed;
-      -webkit-background-position: right 70%;
-      -webkit-background-size: 100%;
-      background-image: url('../img/fon_main.png');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: right 70%;
-      background-size: 100%;
-   }
-
-}
-*/
 .main-title {
    padding: 350px 30px 100px 30px;
    position: relative;
@@ -269,16 +254,13 @@ body:before {
    color: #505653;
    width: 550px;
    height: 750px;
-
    @media (max-width:$md3+px) {
       font-size: 120px;
    }
-
    @media (max-width:$md4+px) {
       font-size: 100px;
    }
-
-   @media (max-width:280px) {
+   @media (max-width:420px) {
       font-size: 80px;
    }
 }
@@ -286,7 +268,7 @@ body:before {
 .h1.and {
    font-family: Nicolettascript;
    opacity: 0.38;
-   font-size: 320px;
+   font-size: 360px;
    line-height: 1.2;
    font-weight: 400;
    color: #8f8f8f;
@@ -297,24 +279,27 @@ body:before {
    @media (max-width:$md3+px) {
       font-size: 250px;
       top: 30%;
-      left: 15%;
+      left: 20%;
    }
-
+   @media (max-width:630px) {
+      left: 5%;
+   }
    @media (max-width:$md4+px) {
-      font-size: 150px;
-      top: 27%;
-      left: -5%;
+      font-size: 280px;
+    top: 20%;
+    left: -4%;
    }
-
-   @media (max-width:280px) {
-      font-size: 100px;
+ 
+   @media (max-width:420px) {
+      font-size: 200px;
+      left: -14%;
    }
-
-   @media (max-width:395px) {
-      left: -22%;
+   @media (max-width:380px) {
+      top: 25%;
+      font-size: 170px;
    }
-   @media (max-width:350px) {
-      left: -42%;
+   @media (max-width:360px) {
+      left: -20%;
    }
 }
 
@@ -323,23 +308,17 @@ body:before {
    right: -20%;
    z-index: 2;
    top: 20%;
-
    @media (max-width:$md3+px) {
-      right: -20%;
+      
    }
-
    @media (max-width:$md4+px) {
-      top: 12%;
-      right: -40%;
+      right: -30%;
    }
-
-   @media (max-width:395px) {
-      //left: -42%;
+   @media (max-width:410px) {
+      right: -50%;
    }
-
    @media (max-width:350px) {
-      font-size: 80px;
-      left: -45%;
+      
    }
 }
 
@@ -348,23 +327,19 @@ body:before {
    left: 0;
    top: 65%;
    z-index: 3;
-
    @media (max-width:$md3+px) {
-      left: -10%;
+      left: -8%;
    }
-
    @media (max-width:$md4+px) {
-      top: 55%;
-      left: -25%;
+      left: -20%;
+      top: 60%;
    }
-
-   @media (max-width:395px) {
-      left: -32%;
+   @media (max-width:410px) {
+      left: -38%;
+      top: 45%;
    }
-
    @media (max-width:350px) {
-      font-size: 80px;
-      left: -45%;
+      left: -42%;
    }
 }
 
@@ -373,7 +348,7 @@ body:before {
    font-family: $fontfamily;
    font-size: 28.8px;
    line-height: 1.2;
-   font-weight: 700;
+   font-weight: 400;
    color: #4d3e2a;
 }
 
@@ -657,6 +632,7 @@ line-height: 170%;
    font-family: $fontfamily;
    font-size: 25px;
    margin: 10px 0px 0px 0px;
+   font-weight: 400;
    @media (max-width:380px) {
       font-size: 20px;
    }
