@@ -413,9 +413,11 @@ body:before {
 }
 
 .arrow {
-  width: 52px;
-  height: 45px;
   margin: 0 auto;
+}
+.arrow img {
+  width: 30px;
+  height: 20px;
 }
 
 h2 {
